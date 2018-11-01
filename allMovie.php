@@ -15,7 +15,7 @@
 	</thead>
 	<tbody>
 		<?php
-			if (isset($_GET['page']) && $_GET['page'] > 0) {
+			if (isset($_GET['page']) && $_GET['page'] > 0 && !isset($_POST['navsearch'])) {
 			 	$page = $_GET['page'];
 			 }else{
 			 	$page = 1;
@@ -26,7 +26,7 @@
 			 if (isset($_POST['navsearch'])) {
 			 	$smname = $_POST['smname'];
 			 	// $namesearchmoviesql = "SELECT mid, mname, myear FROM movie WHERE mname like '%$smname%';";
-			 	$allmovieinfosql = "SELECT mid, mname, myear FROM movie WHERE mname like '%$smname%';";
+			 	$allmovieinfosql = "SELECT mid, mname, myear FROM movie WHERE mname like '%$smname%' LIMIT $start_from, $num_rec_per_page;";
 			 }else{
 			 	// $allmovieinfosql = "SELECT mid, mname, myear FROM movie LIMIT $start_from, $num_rec_per_page;";
 			 	$allmovieinfosql = "SELECT mid, mname, myear FROM movie LIMIT $start_from, $num_rec_per_page;";
@@ -72,14 +72,13 @@ EOF;
 		 ?>
 	</tbody>
 </table>
-<div align="center">
-<ul class="pagination pagination-lg" align="center">
-	<li>
-		 <a href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?allmovie=on'.'&page='.($page-1); ?>">Prev</a>
-	</li>
-	<li>
-		 <a href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?allmovie=on'.'&page='.($page+1); ?>">Next</a>
-	</li>
-</ul>
-</div>
+<?php 
+	if (!isset($smname)) {
+		echo '<div align="center">';
+		echo '<ul class="pagination pagination-lg" align="center"><li>';
+		echo '<a href="'.'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?allmovie=on'.'&page='.($page-1).'"'.'>Prev</a></li><li>';
+		echo '<a href="'.'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?allmovie=on'.'&page='.($page+1).'"'.'>Prev</a></li></ul></div>';	
+	}
+ ?>
+
 <!-- 点击“查询所有电影信息”后显示的内容 end
