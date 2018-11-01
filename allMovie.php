@@ -22,8 +22,18 @@
 			 }
 			 $num_rec_per_page=10;   // 每页显示数量
 			 $start_from = ($page-1) * $num_rec_per_page;
-			include("dbconnection.php");
-			$allmovieinfosql = "SELECT mid, mname, myear FROM movie LIMIT $start_from, $num_rec_per_page;";
+			 include("dbconnection.php");
+			 if (isset($_POST['navsearch'])) {
+			 	$smname = $_POST['smname'];
+			 	// $namesearchmoviesql = "SELECT mid, mname, myear FROM movie WHERE mname like '%$smname%';";
+			 	$allmovieinfosql = "SELECT mid, mname, myear FROM movie WHERE mname like '%$smname%';";
+			 }else{
+			 	// $allmovieinfosql = "SELECT mid, mname, myear FROM movie LIMIT $start_from, $num_rec_per_page;";
+			 	$allmovieinfosql = "SELECT mid, mname, myear FROM movie LIMIT $start_from, $num_rec_per_page;";
+			 }
+
+			
+			
 			if ($result2 = $conn->query($allmovieinfosql)) {
 				if ($result2->num_rows == 0) {
 					print <<<EOT

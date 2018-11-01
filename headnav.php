@@ -1,4 +1,4 @@
-导航栏固定在顶部 start -->
+<!-- 导航栏固定在顶部 start -->
 <script type="text/javascript">
 function showTime(){
     nowtime=new Date();

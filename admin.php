@@ -26,9 +26,9 @@ if(!isset($_SESSION['id'])){
 		<div class="col-md-8 column">
 			<!-- 导航栏固定在顶部 start -->
 			<?php include("headnav.php") ?>
-			<br><br><br>
 			<!-- 导航栏固定在顶部 end -->
 			<!-- 按钮选项 start -->
+			<hr><hr>
 			<form action="" method="GET">
 				<button name="allmovie" value="on" class="btn btn-lg  btn-block">查询所有电影信息</button> 
 				<button name="addmovie" value="on" class="btn btn-info btn-lg btn-block">添加电影信息</button> 
@@ -45,13 +45,13 @@ if(!isset($_SESSION['id'])){
 				// }
 			 ?>
 			<!-- 页面默认显示信息 start -->
-			<?php if ((!isset($_GET['allmovie']) & !isset($_GET['addmovie']) & !isset($_GET['fmdmovie']) & !isset($_GET['commentmovie']) & !isset($_GET['usermanagenment']))) {
+			<?php if ((!isset($_POST['navsearch']) & !isset($_GET['allmovie']) & !isset($_GET['addmovie']) & !isset($_GET['fmdmovie']) & !isset($_GET['commentmovie']) & !isset($_GET['usermanagenment']))) {
 				include("welcome.php");
 			} ?>
 			<!-- 页面默认显示信息 end -->
 
 			<!-- 点击“查询所有电影信息”后显示的内容 start -->
-			<?php if (isset($_GET['allmovie'])) {
+			<?php if (isset($_GET['allmovie']) or isset($_POST['navsearch'])) {
 				// include("deletemovie.php");
 				if (!isset($_POST['fbuttom']) && !isset($_POST['modifymid']) && !isset($_POST['dmid'])) {
 					include("allMovie.php");
@@ -64,7 +64,7 @@ if(!isset($_SESSION['id'])){
 			<!-- 点击“查询所有电影信息”后显示的内容 end -->
 
 			<!-- 点击“添加电影信息”后显示的内容 start -->
-			<?php if (isset($_GET['addmovie'])) {
+			<?php if (isset($_GET['addmovie']) & !isset($_POST['navsearch'])) {
 				
 				include("addmovieaction.php");				 
 				include("addMovie.php");
@@ -72,7 +72,7 @@ if(!isset($_SESSION['id'])){
 			<!-- 点击“添加电影信息”后显示的内容 end -->
 			
 			<!-- 点击“查询/修改/删除电影信息”后显示的内容 start -->
-			<?php if (isset($_GET['fmdmovie'])) {
+			<?php if (isset($_GET['fmdmovie']) & !isset($_POST['navsearch'])) {
 				// include("fmdmovieaction.php");
 				include("deletemovie.php");
 				include("modifymovieaction.php");
@@ -81,14 +81,14 @@ if(!isset($_SESSION['id'])){
 			<!-- 点击“查询/修改/删除电影信息”后显示的内容 end -->
 
 			<!-- 点击“评论管理”后显示的内容 start -->
-			<?php if (isset($_GET['commentmovie'])) {
+			<?php if (isset($_GET['commentmovie']) & !isset($_POST['navsearch'])) {
 				include("deletecommentaction.php");
 				include("commentMovie.php");
 			} ?>
 			<!-- 点击“评论管理”后显示的内容 end -->
 			
 			<!-- 点击“用户管理”后显示的内容 start -->
-			<?php if (isset($_GET['usermanagenment'])) {
+			<?php if (isset($_GET['usermanagenment']) & !isset($_POST['navsearch'])) {
 				include("deleteuseraction.php");
 				include("userManagenment.php");
 			} ?>
