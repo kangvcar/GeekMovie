@@ -1,0 +1,70 @@
+#footer {
+  background-color: #eeeeee;
+}
+
+.p {
+  text-align: center;
+  margin: 0 auto;
+}
+.pp {
+  font-size: 20px;
+  color: red;
+  margin: 0 auto;
+}
+.pp span {padding-left: 150px;}
+.item img {width:1140px; height: auto;}
+
+.fow {
+  height: 283px;
+  width: 100%;
+}
+
+h1.head {
+  color: #000099;
+}
+
+p.foot-btn {
+  text-align: right;
+}
+
+div.p-info {
+  text-align: center;
+  text-shadow: 1px 1px 1px #bbbbbb;
+  font-size: 14px;
+}
+
+ /* 课程外框 */
+div.class {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* 课程图标 */
+div.img-class {
+  text-align: center;
+}
+
+div.img-class.h5 {
+  color: #FF9900;
+}
+
+div.class-head{
+  color: #333399;
+}
+
+div.class-body {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+div.content{
+    background-color: #eeeeee;
+}
+
+div.jumbotron {
+  background-image: url(../images/h52.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
