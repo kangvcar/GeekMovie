@@ -9,7 +9,7 @@
   </div>
   <div class="row">
     <?php 
-      $dongzuomoviesql = "SELECT mid, mname, mimgurl FROM movie WHERE mtype='动作片' LIMIT 4;";
+      $dongzuomoviesql = "SELECT mid, mname, mimgurl FROM movie WHERE mtype LIKE '%动作%' LIMIT 4;";
       $result2 = $conn->query($dongzuomoviesql);
       if ($row = $result2->num_rows > 0) {
         while ($row = $result2->fetch_row()) {
@@ -33,7 +33,7 @@ EOG;
   </div>
   <div class="row">
     <?php 
-      $juqingmoviesql = "SELECT mid, mname, mimgurl FROM movie WHERE mtype='剧情片' LIMIT 4;";
+      $juqingmoviesql = "SELECT mid, mname, mimgurl FROM movie WHERE mtype LIKE '%剧情%' LIMIT 4;";
       $result3 = $conn->query($juqingmoviesql);
       if ($row = $result3->num_rows > 0) {
         while ($row = $result3->fetch_row()) {
@@ -57,7 +57,7 @@ EOG;
   </div>
   <div class="row">
     <?php 
-      $dongmanmoviesql = "SELECT mid, mname, mimgurl FROM movie WHERE mtype='动漫' LIMIT 4;";
+      $dongmanmoviesql = "SELECT mid, mname, mimgurl FROM movie WHERE mtype LIKE '%动漫%' LIMIT 4;";
       $result4 = $conn->query($dongmanmoviesql);
       if ($row = $result4->num_rows > 0) {
         while ($row = $result4->fetch_row()) {
@@ -75,5 +75,29 @@ EOG;
       }
      ?>
   </div>
+
+  <div class="class-head">
+    <h3><i class="glyphicon glyphicon-fire"></i>电视剧</h3>
+  </div>
+  <div class="row">
+    <?php 
+      $dianshijusql = "SELECT * FROM movie WHERE mtype LIKE '%剧%' AND NOT mtype='剧情片' AND NOT mtype='喜剧片' LIMIT 4;";
+      $result5 = $conn->query($dianshijusql);
+      if ($row = $result5->num_rows > 0) {
+        while ($row = $result5->fetch_row()) {
+          print <<<EOG
+            <div class="col-md-3 col-sm-3">
+              <div class="img-class">
+                  <img src="$row[2]" alt="$row[1]">
+              </div>
+              <div class="class-body">
+              <p align="center">$row[1]</p>
+              </div>
+            </div>
+EOG;
+        }
+      }
+     ?>
+  </div>
 </div>
-<!-- 电影锦集 end
+<!-- 电影锦集 end -->
