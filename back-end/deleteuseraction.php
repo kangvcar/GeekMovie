@@ -14,7 +14,7 @@ EOC;
 			print <<<EOD
 				<div class="alert alert-dismissable alert-danger" align="center">
 					 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-					<strong>Warning!</strong> 删除电影信息失败！
+					<strong>Warning!</strong> 删除用户信息失败！
 				</div>
 EOD;
 		}
@@ -24,8 +24,8 @@ EOD;
 		$aemail = $_POST['aemail'];
 		include("dbconnection.php");
 		$addusersql = "INSERT INTO user(username, password, email) VALUES ('$ausername', '$apassword', '$aemail');";
-		$result7 = $conn->query($addusersql);
-		if ($result7) {
+		$conn->query($addusersql);
+		if ($conn->affected_rows > 0) {
 			print <<<EOE
 				<div class="alert alert-dismissable alert-success" align="center">
 					 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -36,7 +36,7 @@ EOE;
 			print <<<EOF
 				<div class="alert alert-dismissable alert-danger" align="center">
 					 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-					<strong>Warning!</strong> 删除用户信息失败！
+					<strong>Warning!</strong> 添加用户信息失败！用户名已存在！
 				</div>
 EOF;
 		}
