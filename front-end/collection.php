@@ -16,7 +16,7 @@
           print <<<EOG
             <div class="col-md-3 col-sm-3">
               <div class="img-class">
-                  <img src="$row[2]" alt="$row[1]">
+                  <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]"></a>
               </div>
               <div class="class-body">
               <p align="center">$row[1]</p>
@@ -40,7 +40,7 @@ EOG;
           print <<<EOG
             <div class="col-md-3 col-sm-3">
               <div class="img-class">
-                  <img src="$row[2]" alt="$row[1]">
+                  <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]"></a>
               </div>
               <div class="class-body">
               <p align="center">$row[1]</p>
@@ -64,7 +64,7 @@ EOG;
           print <<<EOG
             <div class="col-md-3 col-sm-3">
               <div class="img-class">
-                  <img src="$row[2]" alt="$row[1]">
+                  <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]"></a>
               </div>
               <div class="class-body">
               <p align="center">$row[1]</p>
@@ -81,14 +81,14 @@ EOG;
   </div>
   <div class="row">
     <?php 
-      $dianshijusql = "SELECT * FROM movie WHERE mtype LIKE '%剧%' AND NOT mtype='剧情片' AND NOT mtype='喜剧片' LIMIT 4;";
+      $dianshijusql = "SELECT mid, mname, mimgurl FROM movie WHERE mtype LIKE '%剧%' AND NOT mtype='剧情片' AND NOT mtype='喜剧片' LIMIT 4;";
       $result5 = $conn->query($dianshijusql);
       if ($row = $result5->num_rows > 0) {
         while ($row = $result5->fetch_row()) {
           print <<<EOG
             <div class="col-md-3 col-sm-3">
               <div class="img-class">
-                  <img src="$row[2]" alt="$row[1]">
+                  <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]"></a>
               </div>
               <div class="class-body">
               <p align="center">$row[1]</p>

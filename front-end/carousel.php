@@ -18,7 +18,7 @@
           $active = ($i == 1) ? 'active' : '';
           print <<<EOI
           <div class="item $active">
-            <img src="$row[2]" alt="$row[1]">
+            <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]"></a>
             <div class="carousel-caption">
               <h3>$row[1]</h3>
             </div>

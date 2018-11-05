@@ -1,12 +1,11 @@
 <!-- 影片图片 & 影片信息 start -->
+<div class="row clearfix">
 <div class="col-md-2 column"></div>
 <?php 
-	include("headnav.php");
-	if (isset($_GET['mid'])) {
-		$mid = $_GET['mid'];
+	if (isset($_GET['movieid'])) {
+		$mid = $_GET['movieid'];
 		include("dbconnection.php");
 		$detailsql = "SELECT mid, mname, mimgurl, mscore, mdirector, mstar, mtype, marea, myear, msumary, mplayurl FROM movie WHERE mid='$mid';";
-		$result6 = $conn->query($detailsql);
 		$result6 = $conn->query($detailsql);
 		if ($row = $result6->fetch_row()) {
 			print <<<EOL
@@ -36,21 +35,12 @@
 					<dd>$row[9]</dd>
 				</dl>
 			</div>
-		 <div class="col-md-2 column">
-	</div>
-<div class="row clearfix">
-	<div class="col-md-12 column">
-		<video width="320" height="240" controls>
-		  <source src="$row[10]" type="video/WebM">
-		</video>
-	</div>
-</div>
+		 <div class="col-md-2 column"></div>
+
 EOL;
 		}
-	}else{
-		;
 	}
  ?>
-
+</div>
 <!-- 影片图片 & 影片信息 end-->
 

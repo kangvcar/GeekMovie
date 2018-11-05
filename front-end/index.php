@@ -1,3 +1,9 @@
+<?php 
+  if (isset($_POST['lid'])) {
+    session_start();
+  }
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
