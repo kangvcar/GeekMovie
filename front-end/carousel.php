@@ -6,7 +6,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
-  <div class="carousel-inner" role="listbox" style="width: 100%;height: 300px;">
+  <div class="carousel-inner" role="listbox" >
     <?php 
       include("dbconnection.php");
       $carouselsql = "SELECT mid, mname, mimgurl FROM movie ORDER BY mid DESC LIMIT 3;";
@@ -18,7 +18,7 @@
           $active = ($i == 1) ? 'active' : '';
           print <<<EOI
           <div class="item $active">
-            <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]"></a>
+            <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]" style="width: 100%;height: 300px;"></a>
             <div class="carousel-caption">
               <h3>$row[1]</h3>
             </div>
