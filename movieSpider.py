@@ -39,15 +39,15 @@ class okSpider(object):
         #     print(i.mid+"\t"+i.mname)
 
     def getIndexPages(self, url, sumpage):
-    	'''获取需要爬取多少个列表页'''
-        pageurls = list()
+        '''获取需要爬取多少个列表页'''
+        pageurls = []
         ul = "-".join(url.split('-')[:-1])
         for page in range(1, sumpage+1):
             pageurls.append(ul + "-" + str(page) + ".html")
         return pageurls
 
     def getMovieUrls(self, pageurls):
-    	'''获取所有待爬取影片详情页的url'''
+        '''获取所有待爬取影片详情页的url'''
         allurl = list()
         for i, pageurl in enumerate(pageurls):
             print("正在爬取第" + str(i+1) + "页")
@@ -61,7 +61,7 @@ class okSpider(object):
         return allurl
 
     def getMovieInfos(self, infourls):
-    	'''获取所有电影信息'''
+        '''获取所有电影信息'''
         items = []
         for i, infourl in enumerate(infourls):
             try:
@@ -85,7 +85,7 @@ class okSpider(object):
                 item.msumary = html.xpath(
                     '//div[@class="vodplayinfo"]//span')[0].text.strip()
                 item.mplayurl = html.xpath(
-                    '//*[@id="2"]/ul/li/text()')[0].split('$')[-1]
+                    '//*[@id="1"]/ul/li/text()')[0].split('$')[-1]
                 items.append(item)
                 # print(mid)
                 # print(mname+"\t\t"+mdirector+"\t\t"+mstar+"\t\t"+mtype+"\t\t"+marea+"\t\t"+myear)
@@ -100,7 +100,7 @@ class okSpider(object):
         return items
 
     def save2mysql(self, items):
-    	'''把爬取结果写入数据库'''
+        '''把爬取结果写入数据库'''
         conn = mysql.connector.connect(
             user='root', password='root', database='okmovie')
         cursor = conn.cursor()
@@ -131,7 +131,7 @@ class okSpider(object):
         conn.close()
 
     def getSourceCode(self, url):
-    	'''获取网页状态码'''
+        '''获取网页状态码'''
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'}
         try:
@@ -144,7 +144,7 @@ class okSpider(object):
 
 
 # ISO-8859-1
-ok = okSpider('http://www.okzy.co/?m=vod-index-pg-2.html', 1)
+ok = okSpider('http://www.okzy.co/?m=vod-index-pg-2.html', 5)
 # ok = okSpider('http://www.okzy.co/?m=vod-type-id-22-pg-1.html', 1)
 
 # url = 'http://www.okzy.co/?m=vod-type-id-1-pg-1.html'
