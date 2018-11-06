@@ -59,7 +59,7 @@ jikeMovie
 ### 前端首页
 > 如图可见，包含了 ***首页***，***榜单***, ***用户登陆*** 栏目; ***动作片***，***剧情片***，***动漫***，***电视剧***，***为你推荐*** 等模块
 
-![前端首页](https://upload-images.jianshu.io/upload_images/2640591-a260ae8b896dfedc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![前端首页](https://upload-images.jianshu.io/upload_images/2640591-c2ea8b99680dafff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 前端榜单页
 > 如图可见，包含了 ***电影排行榜***，***动漫排行榜***, ***电视剧排行榜*** 等模块
