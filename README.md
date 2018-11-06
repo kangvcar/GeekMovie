@@ -2,7 +2,7 @@
 WEB电影信息系统
 
 # 版本
-- Apache
+- Apache/Nginx
 - PHP-5.4.45
 - MySQL
 - Bootstrap-3.0.1
@@ -13,6 +13,7 @@ WEB电影信息系统
 
 # 数据库导入
 > 先创建数据库`okmovie`,在导入`okmovieV4.sql`文件即可;
+
 > 默认数据库登陆账号为`root`, 密码为`root`; 如有变化请修改`dbconnection.php`文件，否则会数据库连接失败！
 
 ```
@@ -23,7 +24,7 @@ mysql  Ver 15.1 Distrib 5.5.60-MariaDB, for Linux (x86_64) using readline 5.1
 ```
 
 # 部署WEB
-> 部署前请按照上述**数据库导入**进行数据库导入
+> 部署前请按照上述**[数据库导入](https://github.com/kangvcar/jikeMovie#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%BC%E5%85%A5)**进行数据库导入
 1. 首先下载项目文件
     1. GIT下载`git clone https://github.com/kangvcar/jikeMovie.git`
     2. (如果没有安装git)还可以点击此[下载](https://github.com/kangvcar/jikeMovie/archive/master.zip)
