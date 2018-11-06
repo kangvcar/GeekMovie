@@ -8,6 +8,78 @@ WEB电影信息系统
 - Bootstrap-3.0.1
 - Python 3.7
 
+# 说明
+> 本系统前后端分离，可按需下载`back-end`或`front-end`目录进行部署。
+ 
+# 数据库结构
+> 部署本系统前，先导入`back-end/okmovieV4.sql`数据库文件
+### 数据表结构(总共4张表)
+
+| 表名 | 存储信息 | 说明 |
+| ------ | ------ | ------ |
+| admin | 存储后台管理员用户信息表 |  |
+| comment | 存储用户评论表 | ON DELETE CASCADE |
+| movie | 存储影片信息表 |  |
+| user | 存储普通用户信息表 |  |
+
+```
+MariaDB [okmovie]> show tables;
++-------------------+
+| Tables_in_okmovie |
++-------------------+
+| admin             |
+| comment           |
+| movie             |
+| user              |
++-------------------+
+
+MariaDB [okmovie]> desc admin;
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| id       | int(20)     | NO   | PRI | NULL    | auto_increment |
+| username | varchar(20) | NO   |     | NULL    |                |
+| password | varchar(20) | NO   |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
+
+MariaDB [okmovie]> desc comment;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| cid      | int(20)      | NO   | PRI | NULL    | auto_increment |
+| user_id  | int(20)      | YES  | MUL | NULL    |                |
+| movie_id | int(20)      | YES  | MUL | NULL    |                |
+| content  | varchar(200) | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+
+MariaDB [okmovie]> desc movie;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| mid       | int(20)      | NO   | PRI | NULL    |       |
+| mname     | varchar(50)  | YES  |     | NULL    |       |
+| mimgurl   | varchar(200) | YES  |     | NULL    |       |
+| mscore    | varchar(20)  | YES  |     | NULL    |       |
+| mdirector | varchar(20)  | YES  |     | NULL    |       |
+| mstar     | varchar(200) | YES  |     | NULL    |       |
+| mtype     | varchar(50)  | YES  |     | NULL    |       |
+| marea     | varchar(20)  | YES  |     | NULL    |       |
+| myear     | varchar(20)  | YES  |     | NULL    |       |
+| msumary   | varchar(400) | YES  |     | NULL    |       |
+| mplayurl  | varchar(400) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+
+MariaDB [okmovie]> desc user;
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| uid      | int(20)     | NO   | PRI | NULL    | auto_increment |
+| username | varchar(20) | NO   | UNI | NULL    |                |
+| password | varchar(20) | NO   |     | NULL    |                |
+| email    | varchar(30) | NO   |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
+```
+
 # 目录结构
 ```
 jikeMovie
