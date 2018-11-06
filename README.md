@@ -49,7 +49,7 @@ mysql  Ver 15.1 Distrib 5.5.60-MariaDB, for Linux (x86_64) using readline 5.1
 5. 由于后端管理系统一般不能暴露给普通用户，所以直接输入路径进行访问`http://<ip>/back-end/admin.php`
 
 # 功能介绍
-### 前端系统功能介绍
+## 前端系统功能介绍
 - [前端首页](https://github.com/kangvcar/jikeMovie/tree/master/front-end#%E5%89%8D%E7%AB%AF%E9%A6%96%E9%A1%B5)
 - [前端榜单页](https://github.com/kangvcar/jikeMovie/tree/master/front-end#%E5%89%8D%E7%AB%AF%E6%A6%9C%E5%8D%95%E9%A1%B5)
 - [影片搜索功能](https://github.com/kangvcar/jikeMovie/tree/master/front-end#%E5%BD%B1%E7%89%87%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD)
@@ -59,7 +59,7 @@ mysql  Ver 15.1 Distrib 5.5.60-MariaDB, for Linux (x86_64) using readline 5.1
 - [用户登陆功能](https://github.com/kangvcar/jikeMovie/tree/master/front-end#%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD)
 - [用户注册功能](https://github.com/kangvcar/jikeMovie/tree/master/front-end#%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C%E5%8A%9F%E8%83%BD)
 
-### 后端系统功能介绍
+## 后端系统功能介绍
 - [后端管理系统首页](https://github.com/kangvcar/jikeMovie/tree/master/back-end#%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%A6%96%E9%A1%B5)
 - [查询所有电影信息功能](https://github.com/kangvcar/jikeMovie/tree/master/back-end#%E6%9F%A5%E8%AF%A2%E6%89%80%E6%9C%89%E7%94%B5%E5%BD%B1%E4%BF%A1%E6%81%AF%E5%8A%9F%E8%83%BD)
 - [添加电影信息功能](https://github.com/kangvcar/jikeMovie/tree/master/back-end#%E6%B7%BB%E5%8A%A0%E7%94%B5%E5%BD%B1%E4%BF%A1%E6%81%AF%E5%8A%9F%E8%83%BD)
