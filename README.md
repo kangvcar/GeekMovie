@@ -10,10 +10,47 @@ WEB电影信息系统
 
 # 说明
 > 本系统前后端分离，可按需下载`back-end`或`front-end`目录进行部署。
- 
+
+# 数据库导入
+> 先创建数据库`okmovie`,在导入`okmovieV4.sql`文件即可;
+> 默认数据库登陆账号为`root`, 密码为`root`; 如有变化请修改`dbconnection.php`文件，否则会数据库连接失败！
+
+```
+[root@kangvcar ~]# mysql -V
+mysql  Ver 15.1 Distrib 5.5.60-MariaDB, for Linux (x86_64) using readline 5.1
+[root@kangvcar ~]# mysql -uroot -proot -e "CREATE DATABASE okmovie;"
+[root@kangvcar ~]# mysql -uroot -proot -e "use okmovie; source ./jikeMovie/back-end/okmovieV4.sql;"
+```
+
+# 部署WEB
+> 部署前请按照上述**数据库导入**进行数据库导入
+1. 首先下载项目文件
+    1. GIT下载`git clone https://github.com/kangvcar/jikeMovie.git`
+    2. (如果没有安装git)还可以点击此[下载](https://github.com/kangvcar/jikeMovie/archive/master.zip)
+2. 下载项目文件后会获得一个`jikeMovie`目录，在该目录下的有两个子文件夹`back-end`,`front-end`和一个Python文件`movieSpider.py`
+    1. `back-end`： 后端管理项目
+    2. `front-end`： 前端项目
+    3. `movieSpider.py`： Python爬虫项目
+3. 把`back-end`，`front-end`文件夹移动到网站的根目录下(如`/var/www/html`或`/usr/share/nginx/html`)
+4. 配置WEB服务器指定网站根目录为`front-end`文件夹即可
+    1. Apache配置
+        ```
+        ...
+        DocumentRoot "/var/www/html/front-end" 
+        ...
+        ```
+    2. Nginx配置
+        ```
+        ...
+        root /usr/share/nginx/html/front-end;
+        ...
+        ```
+5. 由于后端管理系统一般不能暴露给普通用户，所以直接输入路径进行访问`http://<ip>/back-end/admin.php`
+
 # 数据库结构
 > 部署本系统前，先导入`back-end/okmovieV4.sql`数据库文件
 ### 数据表结构(总共4张表)
+> **数据库必须使用InnoDB引擎**
 
 | 表名 | 存储信息 | 说明 |
 | ------ | ------ | ------ |
