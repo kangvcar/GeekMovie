@@ -12,14 +12,13 @@
     <div class="collapse navbar-collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
         <li><a href="index.php"> 首页</a></li>
-        <li><a href="#student">电影榜单</a></li>
-        <li><a href="#moment">精彩瞬间</a></li>
+        <li><a href="movielist.php">榜单</a></li>
       </ul>
-      <form class="navbar-form navbar-left">
+      <form class="navbar-form navbar-left" action="" method="POST">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" name="navsearchname" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" name="navsearchsubmit" class="btn btn-default">搜索影片</button>
       </form>
           <ul class="nav navbar-nav navbar-right">
             <?php 

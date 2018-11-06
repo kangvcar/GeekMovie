@@ -27,20 +27,15 @@
   <?php include("headnav.php") ?>
   <!-- 导航栏 end -->
   <div class="container">
-    <!-- 轮播图 start -->
-    <?php include("carousel.php") ?>
-    <!-- 轮播图 end -->
-
-    <!-- 电影锦集 start -->
-    <?php include("collection.php") ?>
-    <!-- 电影锦集 end -->
-    <br>
-
-    <!-- 精彩瞬间 start -->
-    <?php include("recommend.php") ?>
-    <!-- 精彩瞬间 end -->
-    <br>
-
+    <?php 
+      if (isset($_POST['navsearchsubmit'])) {
+        include("searchlist.php");
+      }else{
+        include("carousel.php");
+        include("collection.php");
+        include("recommend.php");
+      }
+     ?>
     <!-- 底部 start -->
     <?php include("footer.php") ?>
     <!-- 底部 end -->
