@@ -3,6 +3,7 @@
 <div class="row clearfix">
 <div class="col-md-2 column"></div>
 <div class="col-md-8 column">
+		<br><h3 align="center" class="text-center text-info">网友评论</h3>
 		<?php 
 			include("commentAction.php");
 			if (isset($_GET['movieid'])) {

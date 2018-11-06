@@ -11,7 +11,7 @@
           print <<<EOY
               <div class="col-md-3 col-sm-3">
               <div class="img-class">
-                  <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]"></a>
+                  <a href="./details.php?movieid=$row[0]"><img src="$row[2]" alt="$row[1]" style="width: 100%;height: 250px;"></a>
               </div>
             </div>
 EOY;

@@ -1,4 +1,5 @@
 <!-- 影片图片 & 影片信息 start -->
+<h3 align="center" class="text-center text-info">影片信息</h3>
 <div class="row clearfix">
 <div class="col-md-2 column"></div>
 <?php 
@@ -35,12 +36,11 @@
 					<dd>$row[9]</dd>
 				</dl>
 			</div>
-		 <div class="col-md-2 column"></div>
-
 EOL;
 		}
 	}
  ?>
+<div class="col-md-2 column"></div>
 </div>
 <!-- 影片图片 & 影片信息 end-->
 

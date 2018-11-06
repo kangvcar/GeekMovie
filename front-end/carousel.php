@@ -6,7 +6,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" role="listbox" style="width: 100%;height: 300px;">
     <?php 
       include("dbconnection.php");
       $carouselsql = "SELECT mid, mname, mimgurl FROM movie ORDER BY mid DESC LIMIT 3;";

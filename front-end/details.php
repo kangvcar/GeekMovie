@@ -25,7 +25,10 @@
 		<!-- 影片图片 & 影片信息 start -->
 		<?php include("headdetail.php") ?>
 		<!-- 影片图片 & 影片信息 end -->
-
+    
+    <!-- 影片播放器 start -->
+    <?php include("movieplayer.php") ?>
+    <!-- 影片播放器 start -->
     
     <!-- 影片评论 start -->
     <?php 
