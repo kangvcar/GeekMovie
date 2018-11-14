@@ -1,6 +1,9 @@
 # jikeMovie
 WEB电影信息系统
 
+# Demo
+- 前端：[http://jikee.tk/](http://jikee.tk/)
+- 后台：[http://jike.freevar.com/back-end/admin.php](http://jike.freevar.com/back-end/admin.php)
 # 版本
 - Apache/Nginx
 - PHP-5.4.45
