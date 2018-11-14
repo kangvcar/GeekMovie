@@ -1,6 +1,7 @@
 # jikeMovie
-⚠ *** 【学习研究所用，请勿用于生产环境】 ***
-WEB电影信息系统
+⚠ ***【学习研究所用，请勿用于生产环境】***
+WEB电影信息系统，**前端**集成登陆、注册、搜索、评论、在线播放等功能，**后端**集成了管理员登录、对电影信息的增删查改、评论管理、用户管理等功能。
+
 ![](https://img.shields.io/badge/Version-4.0-red.svg) ![](https://img.shields.io/badge/Python-3.7-blue.svg) ![](https://img.shields.io/badge/PHP-%3E%205.4.5-green.svg) ![](https://img.shields.io/badge/MySQL-%3E%205.5.60-orange.svg) ![](https://img.shields.io/badge/Bootstrap-3.0.1-blue.svg)
 
 # Demo
