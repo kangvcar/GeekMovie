@@ -6,7 +6,7 @@ WEB电影信息系统，**前端**集成登陆、注册、搜索、评论、在�
 ![](https://img.shields.io/badge/Version-4.0-red.svg) ![](https://img.shields.io/badge/Python-3.7-blue.svg) ![](https://img.shields.io/badge/PHP-%3E%205.4.5-green.svg) ![](https://img.shields.io/badge/MySQL-%3E%205.5.60-orange.svg) ![](https://img.shields.io/badge/Bootstrap-3.0.1-blue.svg)
 
 # Demo
-- 前端：[http://jikee.tk/](http://jikee.tk/)
+- 前端：[http://jike.freevar.com](http://jike.freevar.com)
 - 后台：[http://jike.freevar.com/back-end/admin.php](http://jike.freevar.com/back-end/admin.php)
 # 版本
 - Apache/Nginx
