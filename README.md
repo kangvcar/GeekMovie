@@ -7,7 +7,8 @@ WEB电影信息系统，**前端**集成登陆、注册、搜索、评论、在�
 
 # Demo
 - 前端：[http://jike.freevar.com](http://jike.freevar.com)
-- 后台：[http://jike.freevar.com/back-end/admin.php](http://jike.freevar.com/back-end/admin.php) **如需登录密码，用于学习用途，联系作者获取**
+- 后台：[http://jike.freevar.com/back-end/admin.php](http://jike.freevar.com/back-end/admin.php) 
+*如需登录密码，用于学习用途，联系作者获取*
 
 # API
 - http://jike.freevar.com/api.php?q=random
