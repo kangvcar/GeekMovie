@@ -13,6 +13,7 @@
       <ul class="nav navbar-nav">
         <li><a href="index.php"> 首页</a></li>
         <li><a href="movielist.php">榜单</a></li>
+        <li><a href="apidetail.php"> API </a></li>
       </ul>
       <form class="navbar-form navbar-left" action="" method="POST">
         <div class="form-group">
