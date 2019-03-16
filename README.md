@@ -8,6 +8,15 @@ WEB电影信息系统，**前端**集成登陆、注册、搜索、评论、在�
 # Demo
 - 前端：[http://jike.freevar.com](http://jike.freevar.com)
 - 后台：[http://jike.freevar.com/back-end/admin.php](http://jike.freevar.com/back-end/admin.php)
+
+# API
+- http://jike.freevar.com/api.php?q=random
+- http://jike.freevar.com/api.php?q=new
+- http://jike.freevar.com/api.php?q=score
+- http://jike.freevar.com/api.php?q=name&n=速度与激情
+- http://jike.freevar.com/api.php?q=type&t=电影&count=10
+- 极客影院API使用[详细说明](https://github.com/kangvcar/jikeMovie/blob/master/API_README.md)
+
 # 版本
 - Apache/Nginx
 - PHP-5.4.45
