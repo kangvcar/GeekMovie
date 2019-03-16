@@ -9,7 +9,8 @@
     方法： GET <br>
     返回： JSON <br>
   </p>
-```
+  
+```json
 {"0":
   {   
     marea: "美国"
@@ -26,6 +27,7 @@
   }
 }
 ```
+
 </blockquote> 
 <table class="table table-bordered">
   <thead>
