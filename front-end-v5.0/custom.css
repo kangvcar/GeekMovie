@@ -1,0 +1,128 @@
+.headroom--not-top .stui-header__logo .logo {
+    background: url(logo_v.png)/*tpa=https://gimy.tv/statics/img/logo_v.png*/ no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+.headroom--not-top .stui-header__menu > li > a {
+    color: #333;
+}
+
+
+/*header .head .nav-bar-menu li a:hover, header .head .nav-bar-menu li.nav-bar-active a {
+    font-weight: 700;
+}*/
+
+.stui-header__menu > li.active > a:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fa474b;
+    bottom: 0;
+    left: 0;
+}
+
+.headroom--not-top .stui-header__search .form-control {
+    background-color: #F5F5F5;
+}
+
+.stui-header__search {
+    /*position: relative;*/
+    width: 200px;
+    /*margin-left: 50px;*/
+    /*margin-top: 12px;*/
+}
+
+.stui-header__search .form-control {
+    height: 36px;
+    padding: 0 15px;
+    border-radius: 50px;
+    /*background-color: #ededed;*/
+    border: 0;
+}
+
+.headroom--not-top .stui-header__user > li > a .icon {
+    color: #333;
+}
+
+/*.stui-player {
+    min-width: 1180px;
+    background-color: #181818;
+    background: url(../img/playbackground.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
+
+.custom-background {
+    min-width: 1180px;
+    background-color: #181818;
+    background: url(playbackground.png.jpg)/*tpa=https://gimy.tv/statics/img/playbackground.png*/ no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.stui-player {
+    background-color: rgba(0,0,0,0)!important;
+    padding-top: 60px;
+
+}
+
+.plyr--full-ui input[type=range] {
+    color: #Ff423f !important;
+}
+.plyr__control--overlaid  {
+    background: #Ff423f !important;
+}
+
+
+.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+    background: #Ff423f !important;
+}
+
+.plyr__video-wrapper {
+    z-index:99;
+}
+
+@media (max-width:480px) {
+    .plyr__volume {
+        max-width: 32px!important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .plyr video {
+        max-height: 4.2rem;
+        /*height: auto;*/
+        /*padding-bottom: 56.25%;*/
+    }
+
+    .plyr:-webkit-full-screen video {
+        height: 100%;
+        transform: translate(0, 100%);
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .i624 {
+        height:624px!important;
+    }
+    .plyr video {
+        /*height:56.25vw;*/
+        /*padding-bottom: 56.25%;*/
+        /*height: 56.25%!important;*/
+    }
+}
+
+@media screen and (max-width: 1025px) {
+/*.stui-header__menu > li {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    padding: 15px 0 10px;
+}*/
+}
+

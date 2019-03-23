@@ -1,0 +1,361 @@
+.tsina_open * {
+    margin: 0;
+    padding: 0;
+    font: 12px Arial, Helvetica, "宋体", sans-serif;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+.tsina_open .trt {
+    float: right;
+}
+.tsina_open .tlf {
+    float: left;
+}
+.tsina_open .tclr {
+    clear: both;
+    zoom: 1;
+}
+.tsina_open .tclr:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.tsina_open table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.tsina_open a {
+    color: #0082CB;
+    text-decoration: none;
+}
+.tsina_open a:hover {
+    text-decoration: underline;
+}
+.tsina_open .icon_vf {
+    background: url(../../images/thridpart/tpcommon/icon_vf.gif) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+a.btngreen, a.btngreen em, a.btngreen_l, a.btngreen_l em, a.btnnormal, a.btnnormal em, a.btnnormal_l, a.btnnormal_l em, span.btndisable_l, span.btndisable_l em {
+    background: url(../../images/thridpart/newbtnbg.png) no-repeat;
+}
+a.btngreen {
+    background-position: 0 -92px;
+    display: inline-block;
+    padding-left: 12px;
+    color: #fff;
+}
+a.btngreen em {
+    background-position: right -115px;
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    padding-right: 12px;
+    color: #fff;
+}
+a.btngreen:hover, a.btngreen:hover em {
+    text-decoration: none;
+    cursor: pointer;
+}
+a.btnnormal {
+    background-position: 0 0;
+    display: inline-block;
+    padding-left: 12px;
+    color: #424242;
+}
+a.btnnormal em {
+    background-position: right -23px;
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    padding-right: 12px;
+    color: #424242;
+}
+a.btnnormal:hover, a.btnnormal:hover em {
+    text-decoration: none;
+    cursor: pointer;
+}
+a.btngreen_l {
+    background-position: 0 -246px;
+    display: inline-block;
+    padding-left: 24px;
+    color: #fff;
+}
+a.btngreen_l em {
+    background-position: right -273px;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    padding-right: 24px;
+    color: #fff;
+    font-size: 14px;
+}
+a.btngreen_l:hover, a.btngreen_l:hover em {
+    text-decoration: none;
+    cursor: pointer;
+}
+a.btnnormal_l {
+    background-position: 0 -192px;
+    display: inline-block;
+    padding-left: 24px;
+    color: #424242;
+}
+a.btnnormal_l em {
+    background-position: right -219px;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    padding-right: 24px;
+    color: #424242;
+    font-size: 14px;
+}
+a.btnnormal_l:hover, a.btnnormal_l:hover em {
+    text-decoration: none;
+    cursor: pointer;
+}
+span.btndisable_l {
+    background-position: 0 -138px;
+    display: inline-block;
+    padding-left: 24px;
+    color: #424242;
+    color: #7F7F7F;
+    cursor: default;
+}
+span.btndisable_l em {
+    background-position: right -165px;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    padding-right: 24px;
+    color: #7F7F7F;
+    font-size: 14px;
+}
+.tsina_btn_add1, .tsina_btn_add2, .tsina_btn_done, .tsina_btn_dis {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 28px;
+    height: 23px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.tsina_btn_add1:link, .tsina_btn_add1:visited, .tsina_btn_add2:link, .tsina_btn_add2:visited, .tsina_btn_dis:link, .tsina_btn_dis:visited {
+    text-decoration: none;
+}
+.tsina_btn_add1:hover, {
+    text-decoration: none;
+    background-position: 0 -70px;
+}
+.tsina_btn_add1:hover em {
+    background-position: right -105px;
+}
+.tsina_btn_add1 em, .tsina_btn_add2 em, .tsina_btn_done em, .tsina_btn_dis em {
+    font-style: normal;
+    margin: 0;
+    padding: 3px 12px 0 0;
+    height: 23px;
+    display: inline-block;
+    background-position: right -35px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    line-height: 18px;
+    line-height: 20px\9;
+    font-size: 12px;
+    font-weight: normal;
+}
+.tsina_btn_add1, .tsina_btn_add1 em {
+    background-image: url(../../images/thridpart/card/btn_add_2.gif);
+}
+.tsina_btn_add1:link, .tsina_btn_add1:visited, .tsina_btn_add1:hover, .tsina_btn_add1:hover em {
+    color: #fff;
+}
+.tsina_btn_add2, .tsina_btn_add2 em {
+    background-image: url(../../images/thridpart/card/btn_add_1.gif);
+}
+.tsina_btn_add2:link, .tsina_btn_add2:visited, .tsina_btn_add2:hover, .tsina_btn_add2:hover em {
+    color: #333;
+}
+.tsina_btn_done, .tsina_btn_done em {
+    background-image: url(../../images/thridpart/card/btn_add_3.gif);
+    cursor: default;
+}
+.tsina_btn_dis, .tsina_btn_dis em {
+    background-image: url(../../images/thridpart/card/btn_add_4.gif);
+    cursor: default;
+    padding-left: 3px;
+}
+.tsina_btn_dis {
+    padding-left: 9px;
+}
+.tsina_btn_dis:link, .tsina_btn_dis:visited {
+    color: #7a7a7a;
+}
+.tsina_btn_dis img {
+    border: 0;
+    display: block;
+    margin-top: 3px;
+    float: left;
+}
+.tsina_btn_dis span.tsina_ico_ldg, .tsina_btn_dis span.tsina_ico_dis {
+    display: inline-block;
+    height: 22px;
+    width: 18px;
+    float: left;
+}
+.tsina_btn_dis span.tsina_ico_ldg {
+    background: url(../../images/thridpart/tpcommon/tsina_loading.gif) 0 center no-repeat;
+}
+.tsina_btn_dis span.tsina_ico_dis {
+    background: url(../../images/thridpart/card/tsina_logogray.gif) 0 center no-repeat;
+}
+.tsina_loading {
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+}
+.tsina_loading.cter {
+    text-align: center;
+}
+.tsina_loading span.tsina_ico_ldg {
+    background: url(../../images/thridpart/tpcommon/tsina_loading.gif) 0 center no-repeat;
+    display: inline-block;
+    height: 18px;
+    width: 20px;
+    float: left;
+}
+.tsina_loading.cter span.tsina_ico_ldg {
+    float: none;
+    margin: 5px auto;
+}
+.tsina_open .tsina_interested {
+    min-width: 150px;
+    border: 1px solid #cfcfcf;
+    overflow: hidden;
+}
+.tsina_open .tsina_intst_tit {
+    height: 28px;
+    overflow: hidden;
+    background: url(../../images/thridpart/interested/bg_top.gif) repeat-x;
+    padding: 0 8px;
+}
+.tsina_open .titlf {
+    line-height: 28px;
+    background: url(../../images/thridpart/tsina_icon_logo16x16.gif) no-repeat 0 4px;
+    padding-left: 20px;
+    color: #414141;
+}
+.tsina_open .moreinfo {
+    line-height: 28px;
+}
+.tsina_open .tsina_intst_ls {
+    margin: 2px 5px -4px;
+}
+.tsina_open .tsina_intst_ls li {
+    clear: both;
+    zoom: 1;
+    padding: 11px 5px 10px;
+    background: url(../../images/thridpart/tpcommon/dot_01.gif) repeat-x 0 bottom;
+}
+.tsina_open .tsina_intst_ls li:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.tsina_open .clrdot {
+    background: #fff;
+    height: 1px;
+    overflow: hidden;
+}
+.tsina_open .t_img {
+    float: left;
+}
+.tsina_open .t_img img {
+    border: 1px solid #ccc;
+    padding: 2px;
+    background: #fff;
+}
+.tsina_open .t_info {
+    margin-left: 61px;
+    *margin-left: 5px;
+    *float: left;
+    *overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.tsina_open a.ccrn_add, .tsina_open span.ccrn_yet, .tsina_open span.ccrn_mutual, .tsina_open span.ccrn_self {
+    height: 18px;
+    line-height: 18px;
+    *line-height: 20px;
+    text-align: left;
+    display: inline-block;
+    background: url(../../images/thridpart/tpcommon/icon_concern.gif) no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 6px 0 14px;
+}
+.tsina_open a.ccrn_add {
+    background-color: #E3FFD5;
+    background-position: 4px 4px;
+    border: 1px solid #cff3bb;
+}
+.tsina_open a.ccrn_add:hover {
+    background-color: #4fbe4f;
+    border: 1px solid #393;
+    color: #fff;
+    text-decoration: none;
+}
+.tsina_open a.ccrn_add .addnew {
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 1px 0 3px;
+    float: left;
+    line-height: 18px;
+}
+.tsina_open span.ccrn_yet, .tsina_open span.ccrn_mutual, .tsina_open span.ccrn_self {
+    background-color: #eaeaea;
+    background-position: 4px -94px;
+    border: 1px solid #d7d7d7;
+    cursor: default;
+    color: #666;
+}
+.tsina_open .t_info_username:hover {
+    text-decoration: none;
+}
+.tsina_open .t_info_username:hover span {
+    text-decoration: underline;
+}
+.tsina_open .t_info_username img {
+    vertical-align: middle;
+    height: 14px;
+    *height: 12px;
+    _height: 14px;
+}
+.tsina_open .t_info_intro {
+    height: 14px;
+    overflow: hidden;
+    color: #666;
+    margin: 0 0 5px;
+    _width: 100%;
+    word-break: normal;
+    word-wrap: break-word;
+}
+.tsina_open .ie6minW_150 {
+    width: 150px;
+    height: 0;
+    overflow: hidden;
+}
+.t_norslt {
+    min-height: 100px;
+    _height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: #858585;
+    line-height: 18px;
+}

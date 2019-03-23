@@ -1,0 +1,51 @@
+/*!
+ * Edition v2.0 Copyright 2016-2018 http://v.shoutu.cn
+ * Email 726662013@qq.com,admin@shoutu.cn
+ */
+
+/* header */
+.stui-header__top{ background: #000;}
+
+/* header-menu */
+.stui-header__menu > li > a{ color: #fff;}
+.stui-header__menu > li.active > a,.stui-header__menu .dropdown li.active a{ background-color: #FA474B; color: #FFFFFF;}
+.stui-header__menu > li .dropdown{ background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.2);}
+.stui-header__menu > li .dropdown:before{ background-color: #fff;}
+.stui-header__menu .dropdown li a{ background-color: #f5f5f5;}
+
+/* header-search */
+.stui-header__search .submit .icon{ color: #999999;}
+
+/* header-user */
+.stui-header__user > li > a,.stui-header__user > li > a .icon{ color: #fff;}
+.stui-header__user > li .dropdown{ background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.2);}
+.stui-header__user > li .dropdown:before{ background-color: #fff;}
+
+/* screen */
+.stui-index__screen:before{ border-color: transparent transparent transparent #ccc;}
+.stui-index__screen:after{ border-color:transparent transparent  #ccc transparent;}
+.stui-index__screen li{ border-left: 1px solid #eee; }
+
+/* content */
+.stui-content{ background-color: #f8f8f8;}
+.stui-content__thumb .stui-vodlist__thumb{ box-shadow: 0 2px 6px rgba(0,0,0,.5);}
+
+/* player */
+.stui-player{ background-color: #212124;}
+.stui-player__detail .title,.stui-player__detail .title a,.stui-player__detail .data,.stui-player__detail .data a{ color: #fff;}
+.stui-player__detail .data .split-line{ background-color: #444;}
+
+/* autocomplete */
+.autocomplete-suggestions{ background-color: #FFFFFF; box-shadow: 0 2px 10px rgba(0,0,0,.05);}
+.autocomplete-suggestion{ border-top: 1px solid #EEEEEE;}
+.mac_results{ background-color: #FFFFFF; border:1px solid #EEEEEE; box-shadow: 0 2px 10px rgba(0,0,0,.05);}
+.mac_results li{ border-top: 1px solid #EEEEEE;}
+
+@media (max-width:767px){
+	
+	/* header */
+	.stui-header__search .search-close{ color: #fff;}
+	
+	/* player */
+	.stui-player__detail .setnumber{ background-color: #222;}
+}
