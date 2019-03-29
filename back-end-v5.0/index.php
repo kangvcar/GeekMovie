@@ -1,3 +1,10 @@
+<?php 
+	session_start(); 
+	if (!isset($_SESSION['userName'])) {
+		header("Location: login.php");
+		exit;
+	}
+?>
 <!DOCTYPE>
 	<head>
 		<title>管理系统 - Jike 极客影院</title>
@@ -7,7 +14,13 @@
 	<body>
 
 		<h1 id="head" align="center">Jike 极客影院 - 管理系统</h1>
-		<?php include('navigation.php') ?>
+		<ul id="navigation" align="center">
+			<li><a href="index.php">总览</a></li>
+			<li><a href="movie.php">影片管理</a></li>
+			<li><a href="user.php">用户管理</a></li>
+			<li><a href="comment.php">评论管理</a></li>
+			<li><a href="logout.php" class="active">Logout</a></li>
+		</ul>
 			<div id="content" class="container_16 clearfix">
 				<div class="grid_5">
 					<div class="box">
@@ -56,7 +69,8 @@
 				<div class="grid_6">
 					<div class="box">
 						<h2>Messages</h2>
-						<p class="center">管理员你好，欢迎使用管理系统，你的操作将实时同步到前端电影系统，请谨慎操作!</p>
+						<h4 class="center">管理员：<b> <?php echo $_SESSION['userName']; ?> </b></h4>
+						<p class="center">你好，欢迎使用管理系统，你的操作将实时同步到前端电影系统，请谨慎操作!</p>
 					</div>
 					
 					<div class="box">
