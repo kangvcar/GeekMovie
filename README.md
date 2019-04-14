@@ -12,17 +12,17 @@ Geek 极客影院系统包含了[前端web观影页面](https://github.com/kangv
 ![](https://img.shields.io/badge/Version-5.0-red.svg) ![](https://img.shields.io/badge/Python-3.7-blue.svg) ![](https://img.shields.io/badge/PHP-%3E%205.4.5-green.svg) ![](https://img.shields.io/badge/MySQL-%3E%205.5.60-orange.svg) ![](https://img.shields.io/badge/Bootstrap-4.0.0-blue.svg)
 
 # 在线演示Demo
-- 前端web观影页面：[http://jike.freevar.com](http://jike.freevar.com)
-- 后端web站点管理系统：[http://jike.freevar.com/admin](http://jike.freevar.com/admin) 
+- 前端web观影页面：[http://geek.freevar.com](http://geek.freevar.com)
+- 后端web站点管理系统：[http://geek.freevar.com/admin](http://geek.freevar.com/admin) 
 （*普通管理账号admin 密码passwd*）
 
 # API （部分失效）
-- http://jike.freevar.com/api.php?q=random
-- http://jike.freevar.com/api.php?q=new
-- http://jike.freevar.com/api.php?q=score
-- http://jike.freevar.com/api.php?q=name&n=速度与激情
-- http://jike.freevar.com/api.php?q=type&t=电影&count=10
-- 极客影院API使用[*详细说明*](https://github.com/kangvcar/jikeMovie/blob/master/API_README.md)
+- http://geek.freevar.com/api.php?q=random
+- http://geek.freevar.com/api.php?q=new
+- http://geek.freevar.com/api.php?q=score
+- http://geek.freevar.com/api.php?q=name&n=速度与激情
+- http://geek.freevar.com/api.php?q=type&t=电影&count=10
+- 极客影院API使用[*详细说明*](https://github.com/kangvcar/GeekMovie/blob/master/API_README.md)
 
 # 版本
 - Apache/Nginx
