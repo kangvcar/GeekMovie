@@ -1,3 +1,4 @@
+![](https://github.com/kangvcar/GeekMovie/blob/master/logo/geek-banner.png?raw=true)
 # jikeMovie
 ⚠ ***【学习研究所用，请勿用于生产环境】***
 
