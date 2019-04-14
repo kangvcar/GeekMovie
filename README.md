@@ -122,6 +122,7 @@ MariaDB [okmovie]> desc admin;
 | id       | int(20)     | NO   | PRI | NULL    | auto_increment |
 | username | varchar(20) | NO   |     | NULL    |                |
 | password | varchar(20) | NO   |     | NULL    |                |
+| role     | int(10)     | NO   |     | 2       |                |
 +----------+-------------+------+-----+---------+----------------+
 
 MariaDB [okmovie]> desc comment;
@@ -219,4 +220,3 @@ jikeMovie
 ├── movieSpider.py   # Python爬虫文件
 └── README.md  # 说明文件
 ```
-
