@@ -1,5 +1,5 @@
 ![](https://github.com/kangvcar/GeekMovie/blob/master/logo/geek-banner.png?raw=true)
-# jikeMovie
+# GeekMovie
 ⚠ ***【学习研究所用，请勿用于生产环境】***
 
 WEB电影信息系统，**前端**集成登陆、注册、搜索、评论、在线播放等功能，**后端**集成了管理员登录、对电影信息的增删查改、评论管理、用户管理等功能。
