@@ -61,8 +61,8 @@
                                         </form>
                                     </div>
                                     <h3 class="title">
-                                        <img src="./hello 搜尋結果 - Gimy TV 劇迷_files/icon_27.png">
-                                            搜寻关键字: <?php echo $search_wd; ?>
+                                        <img src="./icon_10.png">
+                                            搜索关键字: <?php echo $search_wd; ?>
                                         </img>
                                     </h3>
                                 </div>

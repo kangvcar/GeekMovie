@@ -36,6 +36,14 @@ print <<<EOE
             </div>
         </div>
     </div>
+    <ul class="stui-extra clearfix">
+        <li>
+            <a class="backtop" href="javascript:scroll(0,0)">
+                <i class="icon iconfont icon-less">
+                </i>
+            </a>
+        </li>
+    </ul>
 </div>
 EOE
  ?>

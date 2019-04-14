@@ -1,3 +1,4 @@
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="73568ad2-63f7-4c67-8754-458806366362";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <?php 
 print <<<EOW
 <header class="stui-header__top clearfix" id="header-top">
@@ -46,7 +47,7 @@ print <<<EOW
                 </div>
                 <ul class="stui-header__user">
                     <li class="visible-sm visible-xs visible-md">
-                        <a class="open-search" href="vod-search.php">
+                        <a class="open-search" href="vod-search.php?wd=">
                             <i class="icon iconfont icon-search">
                             </i>
                         </a>

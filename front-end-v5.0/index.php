@@ -19,6 +19,7 @@
         <script src="stui_block.js" type="text/javascript"></script>
         <script src="bootstrap.min.js" type="text/javascript"></script>
         <script src="jquery.cookie.min.js" type="text/javascript"></script>
+        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="73568ad2-63f7-4c67-8754-458806366362";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </head>
     <body style="padding: 0;">
         <?php include 'dbconnection.php'; ?>

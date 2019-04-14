@@ -108,7 +108,7 @@ a:hover{ color: #FA474B;}
 
 /* extra */
 .stui-extra li a,.stui-extra li span{ background-color: #FFFFFF; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);}
-.stui-extra li a.backtop{ background-color: rgba(0,0,0,0.6); color: #FFFFFF; }
+.stui-extra li a.backtop{ background-color: rgba(0,0,0,0.6); color: #FFFFFF;}
 .stui-extra li .sideslip{ background-color: #FFFFFF; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);}
 .stui-extra li .sideslip:before{ background-color: #FFFFFF; border-color: rgba(0, 0, 0, 0.1);}
 
