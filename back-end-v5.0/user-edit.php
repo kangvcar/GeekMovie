@@ -4,7 +4,7 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title>用户信息管理 - Jike 极客影院</title>
+		<title>用户信息管理 - Geek 极客影院</title>
 		<?php include_once('head.php') ?>
 		<script type="text/javascript">
 			$(document).ready(function getUserInfo(id){

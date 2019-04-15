@@ -28,10 +28,10 @@ print <<<EOE
                     </br>
                 </p>
                 <p>
-                    2016-2019   jikeMovie
+                    2016-2019   Geek 极客影院
                 </p>
                 <p class="text-muted text-center">
-                    jikeMovie 2019
+                    Geek 极客影院 2019
                 </p>
             </div>
         </div>

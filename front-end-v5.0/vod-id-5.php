@@ -5,7 +5,7 @@
         <meta content="webkit|ie-comp|ie-stand" name="renderer">
         <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-        <title>热门排行榜 - Jike 极客影院</title>
+        <title>热门排行榜 - Geek 极客影院</title>
         <link href="bootstrap.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" />
         <link href="white.css" rel="stylesheet" />

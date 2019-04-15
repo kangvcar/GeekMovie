@@ -7,13 +7,13 @@
 ?>
 <!DOCTYPE>
 	<head>
-		<title>管理系统 - Jike 极客影院</title>
+		<title>管理系统 - Geek 极客影院</title>
 		<?php include_once('head.php') ?>
 		<script src="dashboard_ajax.js"></script>
 	</head>
 	<body>
 
-		<h1 id="head" align="center">Jike 极客影院 - 管理系统</h1>
+		<h1 id="head" align="center">Geek 极客影院 - 管理系统</h1>
 		<ul id="navigation" align="center">
 			<li><a href="index.php">总览</a></li>
 			<li><a href="movie.php">影片管理</a></li>
@@ -128,7 +128,7 @@
 		<div id="foot">
 			<div class="container_16 clearfix">
 				<div class="grid_16">
-					<a href="http://jike.freevar.com">jike.freevar.com</a> / Jike 极客影院
+					<a href="http://jike.freevar.com">geek.freevar.com</a> / Geek 极客影院
 				</div>
 			</div>
 		</div>

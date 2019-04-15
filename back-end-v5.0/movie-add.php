@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title>管理系统 - Jike 极客影院</title>
+		<title>管理系统 - Geek 极客影院</title>
 		<?php include_once('head.php') ?>
 		<script type="text/javascript">
 			function addMovieFunction(){

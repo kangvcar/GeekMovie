@@ -1,24 +1,24 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title>登录管理系统 - Jike 极客影院</title>
+		<title>登录管理系统 - Geek 极客影院</title>
 		<?php include_once('head.php') ?>
 	</head>
 	<body>
-		<h1 id="head" align="center">Jike 极客影院 - 管理系统</h1>
+		<h1 id="head" align="center">Geek 极客影院 - 管理系统</h1>
 		<ul id="navigation" align="center"><h3>欢迎使用</h3></ul>
 		<div id="content" class="container_16 clearfix">
 			<div class="grid_2">&nbsp;</div>
 			<div class="grid_8">
-				<h2>关于Jike极客影院系统</h2>
+				<h2>关于Geek极客影院系统</h2>
 				<p class="error"><b>⚠ 【本项目仅用于学习研究所用，请勿用于商业用途！】</b></p>
 				<ul>
-					<li>项目地址：<a href="https://github.com/kangvcar/jikemovie">https://github.com/kangvcar/jikemovie</a> <b>欢迎Star&Fork</b></li>
+					<li>项目地址：<a href="https://github.com/kangvcar/geekmovie">https://github.com/kangvcar/geekmovie</a> <b>欢迎Star&Fork</b></li>
 					<li>开发人员：<a href="https://github.com/kangvcar">https://github.com/kangvcar</a></li>
 					<li>本项目包含了前端和后端管理
 						<ul>
-							<li>前端：<a href="http://jike.freevar.com">jike.freevar.com</a></li>
-							<li>后端：<a href="http://jike.freevar.com/admin">jike.freevar.com/admin</a></li>
+							<li>前端：<a href="http://geek.freevar.com">geek.freevar.com</a></li>
+							<li>后端：<a href="http://geek.freevar.com/admin">geek.freevar.com/admin</a></li>
 						</ul>
 					</li>
 					<li>技术栈：
@@ -45,8 +45,8 @@
 					</li>
 				</ul>
 				<p class="success">
-					本系统将不断完善，更多功能和更新敬请关注<a href="https://github.com/kangvcar/jikeMovie">项目</a><br>
-					如发现本系统有任何问题或你有更好的Idea，你可进行二次开发，或到项目主页提交<a href="https://github.com/kangvcar/jikeMovie/issues">Issue</a>
+					本系统将不断完善，更多功能和更新敬请关注<a href="https://github.com/kangvcar/geekMovie">项目</a><br>
+					如发现本系统有任何问题或你有更好的Idea，你可进行二次开发，或到项目主页提交<a href="https://github.com/kangvcar/geekMovie/issues">Issue</a>
 				</p>
 			</div>
 			<form action="login_admin_process.php" method="POST">

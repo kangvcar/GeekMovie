@@ -2,7 +2,7 @@
 <html lang="zh">
     <head>
         <title>
-            电影 - Jike 极客影院
+            电影 - Geek 极客影院
         </title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
         <meta content="IE=EmulateIE10" http-equiv="X-UA-Compatible"/>
