@@ -1,4 +1,4 @@
-![](https://github.com/kangvcar/GeekMovie/blob/master/logo/geek-banner.png?raw=true)
+![](https://github.com/kangvcar/GeekMovie/blob/master/pictures/logos/geek-banner.png?raw=true)
 # Geek 极客影院
 ⚠ ***【学习研究所用，请勿用于生产环境】***
 
