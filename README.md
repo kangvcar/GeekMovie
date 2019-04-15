@@ -29,6 +29,15 @@ Geek 极客影院系统包含了[前端web观影页面](https://github.com/kangv
 - http://geek.freevar.com/api.php?q=type&t=电影&count=10
 - 极客影院API使用[*详细说明*](https://github.com/kangvcar/GeekMovie/blob/master/API_README.md)
 
+# 功能介绍
+## 前端系统功能介绍
+- [V5.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/front-end-v5.0/README.md)
+- [V4.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/front-end/README.md)
+
+## 后端系统功能介绍
+- [V5.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/back-end-v5.0/README.md)
+- [V4.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/back-end/README.md)
+
 # 版本
 - Apache/Nginx
 - PHP-5.4.45
@@ -75,15 +84,6 @@ mysql  Ver 15.1 Distrib 5.5.60-MariaDB, for Linux (x86_64) using readline 5.1
         ...
         ```
 5. 由于后端管理系统一般不能暴露给普通用户，所以直接输入路径进行访问`http://<ip>/admin.php`
-
-# 功能介绍
-## 前端系统功能介绍
-- [V5.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/front-end-v5.0/README.md)
-- [V4.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/front-end/README.md)
-
-## 后端系统功能介绍
-- [V5.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/back-end-v5.0/README.md)
-- [V4.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/back-end/README.md)
 
 # 数据库结构
 > 部署本系统前，先导入`jikeMovie-v5.0.sql`数据库文件
