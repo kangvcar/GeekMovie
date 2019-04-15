@@ -78,12 +78,12 @@ mysql  Ver 15.1 Distrib 5.5.60-MariaDB, for Linux (x86_64) using readline 5.1
 
 # 功能介绍
 ## 前端系统功能介绍
-- V5.0 功能介绍
-- V4.0 功能介绍
+- [V5.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/front-end-v5.0/README.md)
+- [V4.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/front-end/README.md)
 
 ## 后端系统功能介绍
-- V5.0 功能介绍
-- V4.0 功能介绍
+- [V5.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/back-end-v5.0/README.md)
+- [V4.0 功能介绍](https://github.com/kangvcar/GeekMovie/blob/master/back-end/README.md)
 
 # 数据库结构
 > 部署本系统前，先导入`jikeMovie-v5.0.sql`数据库文件
